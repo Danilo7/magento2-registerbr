@@ -2,7 +2,7 @@
   "name": "fcamara/register-brazil",
   "description": "Module to create register of customer brazil",
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": [
         "proprietary"
   ],
