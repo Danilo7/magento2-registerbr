@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Created by PhpStorm.
+ * @author Danilo Cavalcanti de Moura
+ * Email: danilo-cm@hotmail.com
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="customer_form_register">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Fcamara_RegisterBrazil::customer/form/register.phtml</argument>
+            </action>
+        </referenceBlock>
+    </body>
+</page>

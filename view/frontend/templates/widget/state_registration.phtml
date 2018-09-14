@@ -1,0 +1,21 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * @author Danilo Cavalcanti de Moura
+ * Email: danilo-cm@hotmail.com
+ */
+?>
+<div class="field <?= $block->escapeHtmlAttr($block->getFieldId('state_registration')) ?> type_legal no-display">
+    <label for="<?= $block->escapeHtmlAttr($block->getFieldId('state_registration')) ?>" class="label">
+        <span><?= $block->escapeHtml(__('State Registration')) ?></span>
+    </label>
+    <div class="control">
+        <input type="text"
+               name="<?= $block->escapeHtmlAttr($block->getFieldName('state_registration')) ?>"
+               id="<?= $block->escapeHtmlAttr($block->getFieldId('state_registration')) ?>"
+               title="<?= $block->escapeHtml(__('State Registration')) ?>"
+               class="input-text"
+               autocomplete="off"
+        >
+    </div>
+</div>

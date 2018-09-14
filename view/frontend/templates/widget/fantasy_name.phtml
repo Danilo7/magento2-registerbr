@@ -1,0 +1,21 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * @author Danilo Cavalcanti de Moura
+ * Email: danilo-cm@hotmail.com
+ */
+?>
+<div class="field <?= $block->escapeHtmlAttr($block->getFieldId('fantasy_name')) ?> type_legal no-display">
+    <label for="<?= $block->escapeHtmlAttr($block->getFieldId('fantasy_name')) ?>" class="label">
+        <span><?= $block->escapeHtml(__('Fantasy Name')) ?></span>
+    </label>
+    <div class="control">
+        <input type="text"
+               name="<?= $block->escapeHtmlAttr($block->getFieldName('fantasy_name')) ?>"
+               id="<?= $block->escapeHtmlAttr($block->getFieldId('fantasy_name')) ?>"
+               title="<?= $block->escapeHtml(__('Fantasy Name')) ?>"
+               class="input-text"
+               autocomplete="off"
+        >
+    </div>
+</div>

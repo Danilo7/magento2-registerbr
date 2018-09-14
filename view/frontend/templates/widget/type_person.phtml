@@ -1,0 +1,26 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * @author Danilo Cavalcanti de Moura
+ * Email: danilo-cm@hotmail.com
+ */
+?>
+<div class="field type_person required">
+    <label for="<?= $block->escapeHtmlAttr($block->getFieldId('type_person')) ?>" class="label">
+        <span><?= $block->escapeHtml(__('Type Person')) ?></span>
+    </label>
+    <div class="control">
+        <select
+                name="<?= $block->escapeHtmlAttr($block->getFieldName('type_person')) ?>"
+                id="<?= $block->escapeHtmlAttr($block->getFieldId('type_person')) ?>"
+                class="select"
+                data-validate="{required:true}"
+                autocomplete="off"
+        >
+            <option value=""><?php /* @escapeNotVerified */ echo __('Please select...') ?></option>
+            <?php foreach ($block->getOptions() as $option): ?>
+                <option value="<?= $option['value'] ?>"><?= $option['label']->getText() ?></option>
+            <?php endforeach; ?>
+        </select>
+    </div>
+</div>
